@@ -1,19 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>index</title>
+</head>
 
-    <%- include('./layout/footer'); -%>
+<body>
+  <div class="row">
+    <div class="col-2 bg-light vh-100 p-5 side-menu d-flex flex-column justify-content-between">
+      <ul>
+        <li class="list-unstyled  mb-5">
+          <h1>
+            <img src="../assets/img/logo-ANSWER.svg" alt="">
+          </h1>
+        </li>
+        <li class="list-unstyled  mb-4">
+          <a href="#" class="d-flex align-items-center">
+            <span class="material-icons me-3">assessment</span>
+            Dashboard
+          </a>
+        </li>
+        <li class="list-unstyled  mb-4">
+          <a href="" class="d-flex align-items-center">
+            <span class="material-icons me-3">question_answer</span>
+            Question
+          </a>
+        </li>
+        <li class="list-unstyled  mb-4">
+          <a href="#" class="d-flex align-items-center">
+            <span class="material-icons me-3">assignment</span>
+            Assignment
+          </a>
+        </li>
+        <li class="list-unstyled  mb-4">
+          <a href="#" class="d-flex align-items-center">
+            <span class="material-icons me-3">video_library</span>
+            Course
+          </a>
+        </li>
+        <li class="list-unstyled  mb-4">
+          <a href="admin.html" class="d-flex align-items-center">
+            <span class="material-icons me-3">supervisor_account</span>
+            Admin
+          </a>
+        </li>
+        <li class="list-unstyled  mb-4">
+          <a href="#" class="d-flex align-items-center">
+            <span class="material-icons me-3">settings</span>
+            Settings
+          </a>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+        </li>
+      </ul>
+      <div class="profile d-flex ">
+        <img
+          src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80"
+          alt="" class="me-3 profile-pic">
+        <div>
+          <h6 class="mb-0">Andy Chen</h6>
+          <p>andy0401@mail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="d-flex align-items-center justify-content-between p-4">
+        <h4>Assignment</h4>
+        <div>
+          <span class="material-icons me-3">search</span>
+          <span class="material-icons me-3">notifications_active</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="container">
+            <div class="dropdown mb-2">
+              <span class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All (4)
+              </span>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Option 1</a>
+                  <a class="dropdown-item" href="#">Option 2</a>
+                  <a class="dropdown-item" href="#">Option 3</a>
+              </div>
+          </div>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-action list-group-item-success active " aria-current="true">
+
+                <div class="d-flex align-items-center justify-content-between mb-1 ">
+                  <p class="mb-0 fs-8 ">Chapter Assignment 2</p>
+                  <p class="mb-0 fs-8">4 hrs ago</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h6 class="mb-0">Please check this file…</h6>
+                  <p class="mb-0 fs-8">Emily Wang</p>
+                </div>
+
+              </li>
+              <li class="list-group-item list-group-item-action   " aria-current="true">
+
+                <div class="d-flex align-items-center justify-content-between mb-1 ">
+                  <p class="mb-0 fs-8 ">Chapter Assignment 1</p>
+                  <p class="mb-0 fs-8">12 hrs ago</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h6 class="mb-0">My Homework</h6>
+                  <p class="mb-0 fs-8">Emily Wang</p>
+                </div>
+
+              </li>
+              <li class="list-group-item list-group-item-action   " aria-current="true">
+
+                <div class="d-flex align-items-center justify-content-between mb-1 ">
+                  <p class="mb-0 fs-8 ">Chapter Assignment 2</p>
+                  <p class="mb-0 fs-8">4 hrs ago</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h6 class="mb-0">Please check this file…</h6>
+                  <p class="mb-0 fs-8">Emily Wang</p>
+                </div>
+
+              </li>
+              <li class="list-group-item list-group-item-action    " aria-current="true">
+
+                <div class="d-flex align-items-center justify-content-between mb-1 ">
+                  <p class="mb-0 fs-8 ">Chapter Assignment 2</p>
+                  <p class="mb-0 fs-8">4 hrs ago</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h6 class="mb-0">Please check this file…</h6>
+                  <p class="mb-0 fs-8">Emily Wang</p>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+
+
+
+
+        </div>
+        <div class="col">
+          
+          <div class="container">
+            
+            <div class="fs-7 text-right d-flex justify-content-end mb-2">2 comments</div>
+            <div class="card">
+              <div class="card-header d-flex align-items-center justify-content-between">
+                <div>
+                  <span class="fs-7">Chapter Assignment 2 / HTML&CSS</span>
+                  <h6>Please check this file for me, thanks!</h6>
+                </div>
+                <span class="material-icons">
+                  more_vert
+                </span>
+              </div>
+              <div class="card-body">
+                <div>
+                  <div class="d-flex">
+                    <img
+                      src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2134&q=80"
+                      alt="" class="profile-pic me-2">
+                    <div>
+                      <h6 class="mb-0">
+                        Emily Wang
+                      </h6>
+                      <span class="fs-7">10:38 AM (4 hours ago)</span>
+                    </div>
+
+                  </div>
+                  <div class="ms-5 mt-3 pb-4 border-bottom">
+                    <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                      following code the height of the div is bigger than the height of the img ? There is a gap below
+                      the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below
+                      image?</p>
+                    <div class="btn btn-light border " type="button">
+                      <div class="d-flex align-items-center">
+                        <span class="material-icons me-2">attachment</span>
+                        <h6 class="mb-0">HW-2-David.zip</h6>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+                <div class="mt-4">
+
+                  <div class="d-flex">
+                    <img
+                      src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80"
+                      alt="" class="profile-pic me-2">
+                    <div class="d-flex w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">
+                          Andy Chen (You)
+                        </h6>
+                        <span class="fs-7">13:24 AM (1 hours ago)</span>
+                      </div>
+                      <ul class="d-flex">
+
+                        <li class="list-unstyled me-3"> <span class="material-icons-outlined">
+                            star_outline
+                          </span></li>
+                        <li class="list-unstyled"> <span class="material-icons">
+                            edit
+                          </span></li>
+                      </ul>
+                    </div>
+
+
+                  </div>
+                  <div class="ms-5 mt-3">
+                    <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                      a, b, c and d sit on. There is space below that line for the descenders you find on letters like
+                      g, j, p and q.
+                      <br>
+                      You can:<br>
+                    <ul>
+                      <li>adjust the <span class="text-success bg-light">vertical-align</span>  of the image to position it elsewhere (e.g. the middle ) or</li>
+                      <li> change the display so it isn’t inline.</li>
+                    </ul>
+                    </p>
+
+
+                  </div>
+                </div>
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mt-3">
+  
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="flex-grow-1 text-center">
+              <span class="material-icons-outlined">
+                chevron_left
+                </span>
+              <span class="material-icons-outlined">
+                chevron_right
+                </span>
+                
+  
+            </div>
+            <div class="me-4">
+              <div class="btn  btn-outline-success">Mark as read</div>
+              <div class="btn btn-success">Reply</div>
+          </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script type="module" src="../main.js"></script>
+</body>
+
 </html>
