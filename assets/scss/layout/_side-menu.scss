@@ -6,10 +6,28 @@
 }
 
 
+
+.side-menu-list{
+  li{
+    padding-left: 32px;
+    border-left:4px solid transparent;
+  }
+  .active{
+    border-left:  4px solid #198754;
+  }
+
+  a{
+    display: inline-block;
+    width: 100%;
+  }
+ 
+}
+
 .profile-pic{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
     img{
       width: 100%;
     }

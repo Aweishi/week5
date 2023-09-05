@@ -13,248 +13,251 @@
 </head>
 
 <body>
-  <div class="row">
-    <div class="col-2 bg-light vh-100 p-5 side-menu d-flex flex-column justify-content-between">
-      <ul>
-        <li class="list-unstyled  mb-5">
-          <h1>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-2 px-0 bg-light vh-100  side-menu d-flex flex-column justify-content-between ">
+        <div class="">
+          <h1 class="mt-5 mb-4 ms-4">
             <img src="../assets/img/logo-ANSWER.svg" alt="">
           </h1>
-        </li>
-        <li class="list-unstyled  mb-4">
-          <a href="#" class="d-flex align-items-center">
-            <span class="material-icons me-3">assessment</span>
-            Dashboard
-          </a>
-        </li>
-        <li class="list-unstyled  mb-4">
-          <a href="" class="d-flex align-items-center">
-            <span class="material-icons me-3">question_answer</span>
-            Question
-          </a>
-        </li>
-        <li class="list-unstyled  mb-4">
-          <a href="#" class="d-flex align-items-center">
-            <span class="material-icons me-3">assignment</span>
-            Assignment
-          </a>
-        </li>
-        <li class="list-unstyled  mb-4">
-          <a href="#" class="d-flex align-items-center">
-            <span class="material-icons me-3">video_library</span>
-            Course
-          </a>
-        </li>
-        <li class="list-unstyled  mb-4">
-          <a href="#" class="d-flex align-items-center">
-            <span class="material-icons me-3">supervisor_account</span>
-            Admin
-          </a>
-        </li>
-        <li class="list-unstyled  mb-4">
-          <a href="#" class="d-flex align-items-center">
-            <span class="material-icons me-3">settings</span>
-            Settings
-          </a>
-
-        </li>
-      </ul>
-      <div class="profile d-flex ">
-        <img
-          src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80"
-          alt="" class="me-3 profile-pic">
-        <div>
-          <h6 class="mb-0">Andy Chen</h6>
-          <p>andy0401@mail.com</p>
+          <ul class="ps-0 side-menu-list ">
+            <li class="list-unstyled mb-4 ">
+              <a href="#" class="d-flex align-items-center ">
+                <span class="material-icons me-3">assessment</span>
+                Dashboard
+              </a>
+            </li>
+            <li class="list-unstyled  mb-4">
+              <a href="" class="d-flex align-items-center">
+                <span class="material-icons me-3">question_answer</span>
+                Question
+              </a>
+            </li>
+            <li class="list-unstyled   mb-4">
+              <a href="#" class="d-flex align-items-center">
+                <span class="material-icons me-3">assignment</span>
+                Assignment
+              </a>
+            </li>
+            <li class="list-unstyled  mb-4">
+              <a href="#" class="d-flex align-items-center">
+                <span class="material-icons me-3">video_library</span>
+                Course
+              </a>
+            </li>
+            <li class="list-unstyled active   mb-4">
+              <a href="admin.html" class="d-flex align-items-center">
+                <span class="material-icons me-3">supervisor_account</span>
+                Admin
+              </a>
+            </li>
+            <li class="list-unstyled  mb-4">
+              <a href="#" class="d-flex align-items-center">
+                <span class="material-icons me-3">settings</span>
+                Settings
+              </a>
+    
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="p-4">
-        <div class="d-flex align-items-center justify-content-between">
-          <h4>Assignment</h4>
+        <div class="profile ms-4 d-flex ">
+          <img
+            src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80"
+            alt="" class="me-3 profile-pic">
           <div>
-            <span class="material-icons me-3">search</span>
-            <span class="material-icons me-3">notifications_active</span>
+            <h6 class="mb-0">Andy Chen</h6>
+            <p>andy0401@mail.com</p>
           </div>
         </div>
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Name</th>
-              <th scope="col">Email</th>
-              <th scope="col">Verified</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr  data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <th scope="row">#1</th>
-              <td>Emir Wicks</td>
-              <td>emir.wicks@mail.com</td>
-              <td>Yes</td>
-              <td class="">
-                <span class="material-icons me-3">
-                  visibility
-                  </span>
-                  <span class="material-icons">
-                    edit
+      </nav>
+      <div class="col">
+        <div class="p-4">
+          <div class="d-flex align-items-center justify-content-between">
+            <h4>Admin</h4>
+            <div>
+              <span class="material-icons me-3">search</span>
+              <span class="material-icons me-3">notifications_active</span>
+            </div>
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <th scope="row">#1</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td class="">
+                  <span class="material-icons me-3">
+                    visibility
                     </span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">#2</th>
-              <td>Zaina Goldsmith</td>
-              <td>zaina.goldsmith@mail.com</td>
-              <td>Yes</td>
-              <td class="">
-                <span class="material-icons me-3">
-                  visibility
-                  </span>
-                  <span class="material-icons">
-                    edit
+                    <span class="material-icons">
+                      edit
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td class="">
+                  <span class="material-icons me-3">
+                    visibility
                     </span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">#3</th>
-              <td>Mahima Lopez</td>
-              <td>mahima.lopez@mail.com</td>
-              <td>Yes</td>
-              <td class="">
-                <span class="material-icons me-3">
-                  visibility
-                  </span>
-                  <span class="material-icons">
-                    edit
+                    <span class="material-icons">
+                      edit
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="">
+                  <span class="material-icons me-3">
+                    visibility
                     </span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">#4</th>
-              <td>Pharrell Murray</td>
-              <td>pharrell.murray@mail.com</td>
-              <td>Yes</td>
-              <td class="">
-                <span class="material-icons me-3">
-                  visibility
-                  </span>
-                  <span class="material-icons">
-                    edit
+                    <span class="material-icons">
+                      edit
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td class="">
+                  <span class="material-icons me-3">
+                    visibility
                     </span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">#5</th>
-              <td>Annika Mcbride</td>
-              <td>annika.mcbride@mail.com</td>
-              <td>Yes</td>
-              <td class="">
-                <span class="material-icons me-3">
-                  visibility
-                  </span>
-                  <span class="material-icons">
-                    edit
+                    <span class="material-icons">
+                      edit
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#5</th>
+                <td>Annika Mcbride</td>
+                <td>annika.mcbride@mail.com</td>
+                <td>Yes</td>
+                <td class="">
+                  <span class="material-icons me-3">
+                    visibility
                     </span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">#6</th>
-              <td>Fatimah Clark</td>
-              <td>fatimah.clark@mail.com</td>
-              <td>Yes</td>
-              <td class="">
-                <span class="material-icons me-3">
-                  visibility
-                  </span>
-                  <span class="material-icons">
-                    edit
+                    <span class="material-icons">
+                      edit
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#6</th>
+                <td>Fatimah Clark</td>
+                <td>fatimah.clark@mail.com</td>
+                <td>Yes</td>
+                <td class="">
+                  <span class="material-icons me-3">
+                    visibility
                     </span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">#7</th>
-              <td>Klaudia Rhodes</td>
-              <td>klaudia.rhodes@mail.com</td>
-              <td>Yes</td>
-              <td class="">
-                <span class="material-icons me-3">
-                  visibility
-                  </span>
-                  <span class="material-icons">
-                    edit
+                    <span class="material-icons">
+                      edit
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#7</th>
+                <td>Klaudia Rhodes</td>
+                <td>klaudia.rhodes@mail.com</td>
+                <td>Yes</td>
+                <td class="">
+                  <span class="material-icons me-3">
+                    visibility
                     </span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">#8</th>
-              <td>Tillie Lucero</td>
-              <td>tillie.lucero@mail.com</td>
-              <td>Yes</td>
-              <td class="">
-                <span class="material-icons me-3">
-                  visibility
-                  </span>
-                  <span class="material-icons">
-                    edit
+                    <span class="material-icons">
+                      edit
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#8</th>
+                <td>Tillie Lucero</td>
+                <td>tillie.lucero@mail.com</td>
+                <td>Yes</td>
+                <td class="">
+                  <span class="material-icons me-3">
+                    visibility
                     </span>
-              </td>
-            </tr>
-          
-            <tr>
-              <th scope="row">#9</th>
-              <td>Sabrina Stephenson</td>
-              <td>sabrina.stephenson@mail.com</td>
-              <td>Yes</td>
-              <td class="">
-                <span class="material-icons me-3">
-                  visibility
-                  </span>
-                  <span class="material-icons">
-                    edit
-                    </span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">#10</th>
-              <td>Annie Smith</td>
-              <td>annie.smith@mail.com</td>
-              <td>Yes</td>
-              <td class="">
-                <span class="material-icons me-3">
-                  visibility
-                  </span>
-                  <span class="material-icons">
-                    edit
-                    </span>
-              </td>
-            </tr>
+                    <span class="material-icons">
+                      edit
+                      </span>
+                </td>
+              </tr>
             
-          </tbody>
-        </table>
-
-          <nav aria-label="Page navigation  ">
-            <ul class="pagination justify-content-end ">
-              <li class="page-item text-success">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-
+              <tr>
+                <th scope="row">#9</th>
+                <td>Sabrina Stephenson</td>
+                <td>sabrina.stephenson@mail.com</td>
+                <td>Yes</td>
+                <td class="">
+                  <span class="material-icons me-3">
+                    visibility
+                    </span>
+                    <span class="material-icons">
+                      edit
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#10</th>
+                <td>Annie Smith</td>
+                <td>annie.smith@mail.com</td>
+                <td>Yes</td>
+                <td class="">
+                  <span class="material-icons me-3">
+                    visibility
+                    </span>
+                    <span class="material-icons">
+                      edit
+                      </span>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+  
+            <nav aria-label="Page navigation  ">
+              <ul class="pagination justify-content-end ">
+                <li class="page-item text-success">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+  
+        </div>
       </div>
     </div>
   </div>
+ 
 
 
 <!-- Modal -->
